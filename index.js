@@ -17,12 +17,12 @@ const { join } = require('path');
 //   });
 
 // });
-fs.readFile(join('./message.txt'), { encoding: 'utf8' }, (err, data) => {
+fs.readFile(('./message.txt'), { encoding: 'utf8' }, (err, data) => {
   if(err) return console.error(err);
   console.log(data);
 
-  fs.writeFile(join('message2.txt'), data, (err) => {
+  fs.writeFile(('message2.txt'), data, (err) => {
     if(err) return console.error(err);
 
   });
-})
+});
